@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "concurrently -n server,client -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
     "build": "npm run build -w server && npm run build -w client",
+    "start": "npm run start -w server",
+    "tunnel": "node scripts/tunnel.mjs",
     "typecheck": "npm run typecheck -w server && npm run typecheck -w client",
     "db:create": "npm run db:create -w server",
     "db:migrate": "npm run db:migrate -w server",
